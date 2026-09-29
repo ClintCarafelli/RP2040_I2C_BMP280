@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[paper=a4paper, margin=1in]{geometry}
+\usepackage{enumitem}
+
+\newcommand{\breakerline}[0]{\begin{center} \noindent \rule{\linewidth}{0.4pt} \end{center}}
+
+\begin{document}
+\begin{flushright}
+	\textbf{RP2040 I2C and BMP280 Driver} \\
+\end{flushright} 
+
+\breakerline
+
+\noindent The purpose of this project is twofold: 
+\begin{itemize}
+	\item Develop an I2C Driver for the RP2040 chip capable of polling, interrupts, and DMA.
+	\item Develop a driver for the BMP280 sensor
+\end{itemize}
+
+The end-product should not use any of the pico SDK nor any available BMP280 driver. This includes tooling such as linker scripts, firmware, bootloader, etc. The goal is to build an entirely self-sufficient I2C/sensor suite. Cmake will be used for builds, clang for compiling, Gtest/Gmock for testing, and git for project management.
+
+\breakerline
+
+\end{document}
